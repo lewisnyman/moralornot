@@ -1,0 +1,26 @@
+.site-logo {
+  font-family: 'Amatica SC', cursive;
+  color: #DB4C2C;
+}
+.moral-quandaries {
+  font-size: 40px;
+}
+
+.action {
+  border: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.action-yes {
+  background-color: green;
+  float: left;
+}
+.action-no {
+  background-color: red;
+  float: right;
+}
+
