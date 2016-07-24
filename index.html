@@ -8,10 +8,21 @@
   <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatica+SC" rel="stylesheet">
   <link href="/style.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/flexslider.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+  <script>
+      $(function(){
+          $("#typed").typed({
+              stringsElement: $('#typed-strings'),
+              contentType: 'text',
+              backSpeed: 0,
+          });
+      });
+  </script>
+
+
 </head>
 
 <body>
@@ -23,20 +34,24 @@
   </header>
 
   <main class="max-width">
-    <div class="moral-quandaries center clearfix mb3 px2">
-      <p>Is it moral to enrol as a student just for the discounts?</p>
+    <div class="moral-quandaries clearfix mb3 p2">
+      <div id="typed-strings">
+        <p>Is it moral to enrol as a student just for the discounts?</p>
 
-      <p>Is it moral to eat a uneaten sandwich in the office fridge if it's after 3 o'clock?</p>
+        <p>Is it moral to eat a uneaten sandwich in the office fridge if it's after 3 o'clock?</p>
 
-      <p>Is it moral to double-dip a tortilla chip if the chip is massive?</p>
+        <p>Is it moral to double-dip a tortilla chip if the chip is massive?</p>
     </div>
+    <span id="typed"></span>
+  </div>
 
-    <div class="judgement-actions clearfix px2">
-      <button class="action action-yes">Yes</button>
-      <button class="action action-no">No</button>
+
+    <div class="judgement-actions clearfix px2 py1">
+      <div class="max-width">
+        <button class="action action-yes"><span class="typcn typcn-thumbs-up"></span>Yes</button>
+        <button class="action action-no"><span class="typcn typcn-thumbs-down"></span>No</button>
+      </div>
     </div>
-
-    <p class="h1 center">Coming soon</p>
 
   </main>
 
